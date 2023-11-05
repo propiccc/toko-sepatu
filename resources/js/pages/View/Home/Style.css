@@ -1,0 +1,29 @@
+.my-node-enter {
+  opacity: 0;
+  transform: translateX(-100%) ;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transform: translateX(0%) ;
+  transition: opacity 1000ms;
+  visibility:visible;
+  position: relative;
+}
+.my-node-exit {
+  opacity: 1;
+  transform: translateX(0%) ;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+  transform: translateX(100%) ;
+  visibility: hidden;
+  position: absolute;
+}
+
+.scrollbar-none {
+    scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
